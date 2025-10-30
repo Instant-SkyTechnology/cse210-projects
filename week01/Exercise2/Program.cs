@@ -9,10 +9,6 @@ class Program
         int gradeNumber = int.Parse(gradePecent);
 
         string letter = "";
-        // string letteB = "B";
-        // string letteC = "C";
-        // string letteD = "D";
-        // string letteF = "F";
 
         if (gradeNumber >= 90)
         {
@@ -35,8 +31,39 @@ class Program
             letter = "F";
         }
 
+        int LastDigit = gradeNumber % 10;
+        string sign = "";
 
-        Console.WriteLine($"You have earned the grade {letter}");
+        // determine the sign
+        if (LastDigit >= 7)
+
+        {
+            sign = "+";
+        }
+
+        else if (LastDigit < 3)
+        {
+            sign = "-";
+        }
+
+        else
+        {
+            sign = "";
+        }    
+
+        // handle exceptions cases (A+, F+, F-)
+        if (letter == "A" && sign == "+")
+        {
+            sign = "";   
+        }
+            
+        else if (letter == "F")
+        {
+            sign = "";
+        }
+            
+
+        Console.WriteLine($"You have earned the grade {letter}{sign}");
 
         if (gradeNumber >= 70)
         {
