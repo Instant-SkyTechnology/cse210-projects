@@ -22,12 +22,15 @@ class Program
         job2._startYear = 2024;
         job2._endYear = 2025;
 
+        Job job3 = new Job();
+
         Resume resume1 = new Resume();
         resume1._name = "Steve";
 
         resume1._jobs.Add(job0);
         resume1._jobs.Add(job1);
         resume1._jobs.Add(job2);
+        resume1._jobs.Add(job3);
 
         resume1.Display();
     }
