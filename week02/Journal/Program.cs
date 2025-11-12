@@ -64,8 +64,8 @@ class Program
             {
                 Console.WriteLine("You selected: Save");
                 Console.Write("\nEnter the filename to save: ");
-                string filename = Console.ReadLine();
-                theJournal.SaveToFile(filename);
+                string fileName = Console.ReadLine();
+                theJournal.SaveToFile(fileName);
             }
             else if (choiceEntry == 5)
             {
