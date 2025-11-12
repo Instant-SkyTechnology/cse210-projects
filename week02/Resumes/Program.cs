@@ -26,6 +26,7 @@ class Program
 
         Resume resume1 = new Resume();
         resume1._name = "Steve";
+        resume1._lastName = "Kalala";
 
         resume1._jobs.Add(job0);
         resume1._jobs.Add(job1);
