@@ -83,6 +83,31 @@ public class Reference
     {
         _endVerse = endVerse;
     }
+
+    // public string Book
+    // {
+    //     get => _book;
+    //     set => _book = value;
+    // }
+
+    // public int Chapter
+    // {
+    //     get => _chapter;
+    //     set => _chapter = value;
+    // }
+
+    // public int Verse
+    // {
+    //     get => _verse;
+    //     set => _verse = value;
+    // }
+
+    // public int EndVerse
+    // {
+    //     get => _endVerse;
+    //     set => _endVerse = value;
+    // }
+
     // METHODS
     public string GetDisplayText()
     {
