@@ -1,0 +1,3 @@
+0
+SimpleGoal|Workout|Workout every morning at least 10 min.|10|False
+EternalGoal|Temple arriage|I want to be sealed with my future wife in the temple.|50
