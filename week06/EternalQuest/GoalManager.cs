@@ -12,9 +12,7 @@ public class GoalManager
 
     public void Start()
     {
-        bool running = true;
-
-        while (running)
+        while (true)
         {
             DisplayPlayerInfo();
             Console.WriteLine("\n=== Eternal Quest Menu ===");
@@ -28,26 +26,44 @@ public class GoalManager
             Console.WriteLine("7. Quit");
             Console.Write("Choose an option: ");
 
-            switch (Console.ReadLine())
-            {
-                case "1": CreateGoal(); break;
-                case "2": ListGoalDetails(); break;
-                case "3": RecordEvent(); break;
-                case "4": SaveGoals(); break;
-                case "5": LoadGoals(); break;
-                case "6": DeleteGoal(); break;
-                case "7":running = false;
-                    Console.WriteLine("==========================");
-                    Console.WriteLine("Thank you. Goodbye!");
-                    Console.WriteLine("==========================");
-                    Console.WriteLine();
-                    break;
+            string option = Console.ReadLine();
 
-                default:
-                    Console.WriteLine("==================================================");
-                    Console.WriteLine("Invalid option! Please enter a number from 1 to 7.");
-                    Console.WriteLine("==================================================");
-                    break;
+            if (option == "1")
+            {
+                CreateGoal();
+            }
+            else if (option == "2")
+            {
+                ListGoalDetails();
+            }
+            else if (option == "3")
+            {
+                RecordEvent();
+            }
+            else if (option == "4")
+            {
+                SaveGoals();
+            }
+            else if (option == "5")
+            {
+                LoadGoals();
+            }
+            else if (option == "6")
+            {
+                DeleteGoal();
+            }
+            else if (option == "7")
+            {
+                Console.WriteLine("==========================");
+                Console.WriteLine("Thank you. Goodbye!");
+                Console.WriteLine("==========================");
+                break;
+            }
+            else
+            {
+                Console.WriteLine("==================================================");
+                Console.WriteLine("Invalid option! Please enter a number from 1 to 7.");
+                Console.WriteLine("==================================================");
             }
         }
     }
@@ -55,18 +71,6 @@ public class GoalManager
     public void DisplayPlayerInfo()
     {
         Console.WriteLine($"\nCurrent Score: {_score} points");
-    }
-
-    public void ListGoalDetails()
-    {
-        Console.WriteLine("\n=== Goal List ===");
-
-        int i = 1;
-        foreach (Goal goal in _goals)
-        {
-            Console.WriteLine($"{i}. {goal.GetDetailsString()}");
-            i++;
-        }
     }
 
     public void CreateGoal()
@@ -115,6 +119,18 @@ public class GoalManager
         }
 
         Console.WriteLine("Goal created!");
+    }
+
+    public void ListGoalDetails()
+    {
+        Console.WriteLine("\n=== Goal List ===");
+
+        int i = 1;
+        foreach (Goal goal in _goals)
+        {
+            Console.WriteLine($"{i}. {goal.GetDetailsString()}");
+            i++;
+        }
     }
 
     public void RecordEvent()
@@ -187,6 +203,7 @@ public class GoalManager
 
         Console.WriteLine("Goals loaded successfully.");
     }
+
     public void DeleteGoal()
     {
         if (_goals.Count == 0)
@@ -219,5 +236,13 @@ public class GoalManager
         _goals.RemoveAt(index - 1);
         Console.WriteLine("Goal deleted successfully!");
     }
-
 }
+
+
+
+
+
+
+
+
+
