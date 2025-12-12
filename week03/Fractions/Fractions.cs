@@ -25,18 +25,18 @@ public class Fractions
     {
         return _top;
     }
-    public int SetTop(int Top)
+    public void SetTop(int Top)
     {
-        return _top = Top;
+        _top = Top;
     }
 
     public int GetBottom()
     {
         return _bottom;
     }
-    public int SetBottom(int Bottom)
+    public void SetBottom(int Bottom)
     {
-        return _bottom = Bottom;
+        _bottom = Bottom;
     }
 
     public string GetFractionString()
