@@ -12,7 +12,7 @@ class Program
         o1.AddProduct(new Product("Laptop", "T16", 1999.99, 1));
         o1.AddProduct(new Product("Mouse", "MSE200", 25.50, 2));
 
-        // Lives outside of USA
+        // Lives in the USA
         Address a2 = new Address("123 Maple Street", "Salt Lake City", "UT", "USA");
         Customer c2 = new Customer("Wilson Ebualontin", a2);
         Order o2 = new Order(c2);
