@@ -26,7 +26,7 @@ class Program
 
         v4.AddComment(new Comment("Jacob", "Finally, someone explained async/await clearly!"));
         v4.AddComment(new Comment("Laura", "The promise chain comparison was super helpful."));
-        v4.AddComment(new Comment("Sam", "Please make a video on JavaScript event loops next!"));
+        // v4.AddComment(new Comment("Sam", "Please make a video on JavaScript event loops next!"));
 
         // LIST OF VIDEOS
         List<Video> videos = new List<Video> { v1, v2, v3, v4 };
