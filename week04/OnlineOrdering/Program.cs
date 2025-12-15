@@ -22,15 +22,27 @@ class Program
         o2.AddProduct(new Product("Wireless Charger", "WCH202", 29.99, 2));
         o2.AddProduct(new Product("Headphones", "HP303", 89.99, 1));
 
+        // // DISPLAY ORDER 1
+        // Console.WriteLine(o1.GetPackingLabel());
+        // Console.WriteLine(o1.GetShippingLabel());
+        // Console.WriteLine($"Total Price: ${o1.GetTotalPrice():0.00}");
+        // Console.WriteLine();
+
+        // // DISPLAY ORDER 2
+        // Console.WriteLine(o2.GetPackingLabel());
+        // Console.WriteLine(o2.GetShippingLabel());
+        // Console.WriteLine($"Total Price: ${o2.GetTotalPrice():0.00}");
+
         // DISPLAY ORDER 1
-        Console.WriteLine(o1.GetPackingLabel());
-        Console.WriteLine(o1.GetShippingLabel());
+        o1.GetPackingLabel();
+        o1.GetShippingLabel();
         Console.WriteLine($"Total Price: ${o1.GetTotalPrice():0.00}");
         Console.WriteLine();
 
         // DISPLAY ORDER 2
-        Console.WriteLine(o2.GetPackingLabel());
-        Console.WriteLine(o2.GetShippingLabel());
+        o2.GetPackingLabel();
+        o2.GetShippingLabel();
         Console.WriteLine($"Total Price: ${o2.GetTotalPrice():0.00}");
+        Console.WriteLine();
     }
 }
