@@ -22,6 +22,7 @@ public class WritingAssignment : Assignment
         _title = title;
     }
 
+    // METHOD
     public string GetWritingInformation()
     {
         return $"{_title} by {_studentName}";

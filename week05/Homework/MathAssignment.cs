@@ -34,6 +34,7 @@ public class MathAssignment : Assignment
         _problems = problem;
     }
 
+    // METHOD
     public string GetHomeworkList()
     {
         return $"Section {_textBookSection} Problems {_problems}";

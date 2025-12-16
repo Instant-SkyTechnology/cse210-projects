@@ -33,7 +33,7 @@ public class Assignment
         _topic = topic;
     }
 
-    // METHODS
+    // METHOD
     public string GetSummary()
     {
         return $"{_studentName} - {_topic}";
