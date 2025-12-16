@@ -42,11 +42,11 @@ public abstract class Activity
         List<string> animationString = new List<string>();
         animationString.Add("|");
         animationString.Add("/");
-        animationString.Add("-");
+        animationString.Add("—");
         animationString.Add("\\");
         animationString.Add("|");
         animationString.Add("/");
-        animationString.Add("-");
+        animationString.Add("—");
         animationString.Add("\\");
 
         foreach (string s in animationString)

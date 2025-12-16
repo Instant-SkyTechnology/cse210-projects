@@ -42,10 +42,10 @@ class Program
             }
             else if (choiceEntry == 4)
             {
-                Console.WriteLine("==================================");
+                Console.WriteLine("===================================");
                 string message = "Thank you. Goodbye!";
-                Console.WriteLine(message.PadLeft((34 + message.Length) / 2).PadRight(34));
-                Console.WriteLine("==================================");
+                Console.WriteLine(message.PadLeft((35 + message.Length) / 2).PadRight(35));
+                Console.WriteLine("===================================");
                 Console.WriteLine();
                 break;
             }

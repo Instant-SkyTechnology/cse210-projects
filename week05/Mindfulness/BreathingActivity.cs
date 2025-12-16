@@ -19,7 +19,7 @@ public class BreathingActivity : Activity
 
         while (timePassed < Duration)
         {
-            Console.Write("Breathe in ");
+            Console.Write("Breathe in... ");
             Countdown(3);
             timePassed += 3;
 
