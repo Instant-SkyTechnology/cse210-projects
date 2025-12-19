@@ -123,6 +123,11 @@ public class GoalManager
 
     public void ListGoalDetails()
     {
+        if (_goals.Count == 0)
+        {
+            Console.WriteLine("\nThere are no goals to display.");
+            return;
+        }
         Console.WriteLine("\n=== Goal List ===");
 
         int i = 1;

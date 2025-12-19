@@ -1,4 +1,2 @@
 180
-SimpleGoal|Eating well|To eat every morning, afternoon, and in the evening|10|True
-ChecklistGoal|Workout|To workout 10 min every day|20|10|3|3
-EternalGoal|Temple marriage|I want to marriage and get sealed with my wife.|10
+SimpleGoal|Masanga|Masanga eza mabien|10|False
